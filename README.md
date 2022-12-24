@@ -6,12 +6,15 @@ Simple web page that counts how many words and characters are present in a parag
 
 ## Features
 
-* Dark/Light Mode depending on system preferences
+### Dark/Light Mode depending on system preferences
 
-<img src="Images/ss-dark" alt="Dark Mode" width = 400px/>
+<img src="Images/ss-dark.png" alt="Dark Mode" width = 400px/>
 
-<img src="Images/ss-light" alt="Light Mode" width = 400px/>
 
-* Scale Text Box
+<img src="Images/ss-light.png" alt="Light Mode" width = 400px/>
+
+
+
+### Scale Text Box
 
 The text area can be minimized or maximized depending on user likings
