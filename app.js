@@ -11,8 +11,6 @@ function updateCounts() {
   wordCount = words.length;
   charCount = textArea.value.length;
 
-  console.log(wordCount, charCount);
-
   // Update the DOM
   document.documentElement.style.setProperty("--word-count", wordCount);
   document.documentElement.style.setProperty("--char-count", charCount);
