@@ -6,20 +6,26 @@
   --word-count: 0;
   --char-count: 0;
 
-  counter-reset: word char;
+  counter-reset: word var(--word-count) char var(--char-count);
+
+  --textarea-size: 70vmin;
+  --textarea-min-size: 300px;
 }
 
 .container {
   position: absolute;
   top: 10%;
-  left: calc(50% - 25vmin);
+  left: calc(50% - calc(var(--textarea-size) / 2));
 }
 
 #text {
   position: relative;
-  width: 50vmin;
-  height: 50vmin;
+  width: var(--textarea-size);
+  height: var(--textarea-size);
+  min-width: var(--textarea-min-size);
+  min-height: var(--textarea-min-size);
   border-radius: 15px;
+  border: 3px solid var(--secondary-color);
   padding: 15px;
 }
 
