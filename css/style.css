@@ -59,6 +59,13 @@ body {
   padding: 15px;
 }
 
+#desc {
+  font-style: italic;
+  text-align: center;
+  font-size: initial;
+  margin-bottom: 20px;
+}
+
 .container::after {
   content: "Количество слов:  " counter(word) "";
   font-style: italic;
