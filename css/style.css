@@ -69,7 +69,6 @@ body {
   height: 40px;
   border-radius: 5px;
   position: absolute;
-  bottom: -20px;
   left: calc(50% - 40%);
   display: flex;
   align-items: center;
@@ -88,7 +87,7 @@ body {
   height: 40px;
   border-radius: 5px;
   position: absolute;
-  bottom: -60px;
+  bottom: -40px;
   left: calc(50% - 40%);
   display: flex;
   align-items: center;
@@ -142,4 +141,22 @@ textarea:focus {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+body:after{
+  content: "БЕТА";
+  position: fixed;
+  width: 80px;
+  height: 25px;
+  background: #ee8e4a87;
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 27px;
+  transform:rotate(-45deg);
 }
