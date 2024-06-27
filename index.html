@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style-reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="Icons/wc-logo.svg" type="image/x-icon" />
-
+	
+	<script type="text/javascript" src="main.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="120x120" href="favicon/favicon-120x120.png" />
+	
     <script src="app.js" defer></script>
 
-    <title>WordCounter</title>
+    <title>Помогатор (подчищатор сносок + считатор слов)</title>
+	
+	<!-- для Chrome, Firefox OS, Opera... -->
+	<!-- <meta name="theme-color" content="#ffffff" /> -->
+	<meta name="theme-color" content="#ef9218" />
+	
+	<!-- для IE 11+, Windows Phone, 8, 8.1, 10 -->
+	<meta name="msapplication-config" content="browserconfig.xml" />
+	<meta name="msapplication-navbutton-color" content="#ef9218" />
+	
+	<!-- для macOS, iOS, Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" />
+	<meta name="apple-mobile-web-app-title" content="Помогатор" />
+	<link rel="apple-touch-icon" href="favicon/favicon-120x120.png" />
+	
+	<!-- для Android, Chrome OS -->
+	<link rel="manifest" href="site.webmanifest" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="application-name" content="Помогатор" />
+	
+	<!-- общее -->
+    <meta name="description" content="Помогатор (подчищатор сносок + считатор слов)" />
+    <meta
+      name="Keywords"
+      content="убрать сноски, удалить сноски, квадратные скобки, посчитать, подсчитать, количество слов, число слов, объем, объём"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Алексей Владимиров + WebDvProjects + Milly" />
+    
+	<!-- w -->
+    <meta property="og:site_name" content="pomogator.netlify.app" />
+    <meta property="og:title" content="Помогатор (подчищатор + считатор)" />
+    <meta property="og:description" content="Помогатор (подчищатор сносок + считатор слов)"/>
+    <meta property="og:image" itemprop="image" content="favicon/favicon-120x120.png" />
+    <meta property="og:type" content="website" />
+	
   </head>
   <body>
     <div class="container">
-      <h1>Word Counter</h1>
-      <textarea name="text" id="text" placeholder="Type here"></textarea>
+      <h1>Помогатор (подчищатор + считатор)</h1>
+      <textarea name="text" id="text" placeholder="Текст сюда"></textarea>
+	  <p><a href="#" name="replace" id="replace">Убрать сноски</a></p>
     </div>
+	
+	<script type="text/javascript">
+    $('a#replace').click(function(e) {
+    e.preventDefault();
+    var value = $('textarea[name="Текст сюда"]').val();
+    value = value.replace(/\s*\[[^\]]*\]/g, '');
+    $('textarea[name="Текст сюда"]').val(value);
+    });
+    </script>
+	
   </body>
 </html>

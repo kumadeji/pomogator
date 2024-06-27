@@ -60,7 +60,7 @@ body {
 }
 
 .container::after {
-  content: "Words:  " counter(word) "    |   Characters: " counter(char);
+  content: "Количество слов:  " counter(word) "    |   Characters: " counter(char);
   color: white;
   tab-size: 3;
   font-size: 1.2rem;
@@ -69,6 +69,24 @@ body {
   border-radius: 5px;
   position: absolute;
   bottom: -20px;
+  left: calc(50% - 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border: 2px white solid;
+}
+
+#replace {
+  color: white;
+  tab-size: 3;
+  font-size: 1.2rem;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -50px;
   left: calc(50% - 40%);
   display: flex;
   align-items: center;
