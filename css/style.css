@@ -99,6 +99,7 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 25px;
@@ -111,4 +112,25 @@ textarea {
 
 textarea:focus {
   outline: none;
+}
+
+.footer-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
