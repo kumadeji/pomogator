@@ -61,6 +61,7 @@ body {
 
 .container::after {
   content: "Количество слов:  " counter(word) "";
+  font-style: italic;
   color: white;
   tab-size: 3;
   font-size: 1.2rem;
