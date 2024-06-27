@@ -43,7 +43,7 @@ body {
 
 .container {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: calc(50% - calc(var(--textarea-size) / 2));
 }
 
