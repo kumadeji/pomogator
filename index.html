@@ -55,19 +55,9 @@
   </head>
   <body>
     <div class="container">
-      <h1>Помогатор (подчищатор + считатор)</h1>
+      <h1>Помогатор 0.1 (подчищатор + считатор)</h1>
       <textarea name="text" id="text" placeholder="Текст сюда"></textarea>
-	  <p><a href="#" name="replace" id="replace">Убрать сноски</a></p>
+	  <p><a href="#" name="replace" onclick="copyToClipboard()" id="replace">Убрать сноски</a></p>
     </div>
-	
-	<script type="text/javascript">
-    $('a#replace').click(function(e) {
-    e.preventDefault();
-    var value = $('textarea[name="Текст сюда"]').val();
-    value = value.replace(/\s*\[[^\]]*\]/g, '');
-    $('textarea[name="Текст сюда"]').val(value);
-    });
-    </script>
-	
   </body>
 </html>

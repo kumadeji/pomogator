@@ -60,7 +60,7 @@ body {
 }
 
 .container::after {
-  content: "Количество слов:  " counter(word) "    |   Characters: " counter(char);
+  content: "Количество слов:  " counter(word) "";
   color: white;
   tab-size: 3;
   font-size: 1.2rem;
@@ -86,7 +86,7 @@ body {
   height: 40px;
   border-radius: 5px;
   position: absolute;
-  bottom: -50px;
+  bottom: -60px;
   left: calc(50% - 40%);
   display: flex;
   align-items: center;
@@ -94,10 +94,12 @@ body {
   background-color: black;
   color: white;
   border: 2px white solid;
+  text-decoration: unset;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 25px;
 }
